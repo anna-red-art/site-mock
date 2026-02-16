@@ -1,0 +1,425 @@
+/* ========================================
+   Reset & Base
+   ======================================== */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    color:#111;
+    background:#fff;
+    line-height:1.8;
+}
+
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight:400;
+}
+
+/* ========================================
+   Header & Navigation (Common)
+   ======================================== */
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+    border-bottom:1px solid #eee;
+}
+
+nav a {
+    margin-left:30px;
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:0.2s;
+}
+
+nav a:hover {
+    color:#666;
+}
+
+/* ========================================
+   Footer (Common)
+   ======================================== */
+footer {
+    padding:60px 40px;
+    text-align:center;
+    font-size:14px;
+    color:#777;
+    border-top:1px solid #eee;
+}
+
+/* ========================================
+   Root Landing Page (index.html)
+   ======================================== */
+body.landing {
+    background:#fafafa url('/assets/images/cover/landing.jpg') center/cover no-repeat;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+body.landing::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(255,255,255,0.78);
+    z-index:1;
+}
+
+body.landing .container {
+    text-align:center;
+    padding:40px;
+    position:relative;
+    z-index:2;
+}
+
+body.landing h1 {
+    font-size:48px;
+    letter-spacing:3px;
+    margin-bottom:60px;
+}
+
+body.landing .tagline {
+    font-size:14px;
+    letter-spacing:2px;
+    color:#666;
+    margin-bottom:60px;
+}
+
+.language-links {
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.language-links a {
+    display:inline-block;
+    padding:15px 40px;
+    border:1px solid #111;
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:2px;
+    transition:0.3s;
+    min-width:120px;
+    background:rgba(255,255,255,0.5);
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.language-links a:hover {
+    background:#111;
+    color:white;
+}
+
+/* ========================================
+   Hero Section (Home)
+   ======================================== */
+.hero {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 40px;
+}
+
+.hero h1 {
+    font-size:36px;
+    letter-spacing:3px;
+    margin-bottom:40px;
+    line-height:1.8;
+}
+
+.hero .tagline {
+    font-size:14px;
+    letter-spacing:2px;
+    color:#666;
+    margin-top:20px;
+}
+
+.button {
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 30px;
+    border:1px solid #111;
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.button:hover {
+    background:#111;
+    color:white;
+}
+
+/* ========================================
+   Container & Page Title (Common)
+   ======================================== */
+.container {
+    max-width:1200px;
+    margin:0 auto;
+    padding:120px 40px 80px;
+}
+
+.page-title {
+    font-size:32px;
+    margin-bottom:60px;
+    letter-spacing:2px;
+}
+
+/* ========================================
+   About Page
+   ======================================== */
+.tagline {
+    font-size:14px;
+    letter-spacing:2px;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.profile {
+    margin-bottom:60px;
+    line-height:2.2;
+}
+
+.profile p {
+    margin-bottom:10px;
+}
+
+.section {
+    margin-bottom:60px;
+}
+
+.section h2 {
+    font-size:20px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.section p {
+    line-height:2;
+    color:#333;
+}
+
+/* ========================================
+   Contact Page
+   ======================================== */
+.contact-info {
+    margin-bottom:60px;
+}
+
+.contact-info h2 {
+    font-size:20px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.contact-info p {
+    line-height:2.2;
+    margin-bottom:10px;
+}
+
+.contact-info a {
+    color:#111;
+    text-decoration:none;
+    border-bottom:1px solid #ddd;
+    transition:0.2s;
+}
+
+.contact-info a:hover {
+    border-bottom-color:#111;
+}
+
+.note {
+    background:#f9f9f9;
+    padding:30px;
+    line-height:2;
+    color:#666;
+}
+
+/* ========================================
+   Works List Page
+   ======================================== */
+.works-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:60px;
+}
+
+.work-item {
+    text-decoration:none;
+    color:#111;
+    display:block;
+    transition:0.3s;
+}
+
+.work-item:hover {
+    opacity:0.7;
+}
+
+.work-item img {
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.work-item h2 {
+    font-size:18px;
+    margin-bottom:8px;
+    letter-spacing:1px;
+}
+
+.work-item .year {
+    font-size:14px;
+    color:#666;
+    letter-spacing:0.5px;
+}
+
+/* ========================================
+   Work Detail Page
+   ======================================== */
+.breadcrumb {
+    font-size:14px;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.breadcrumb a {
+    color:#666;
+    text-decoration:none;
+}
+
+.breadcrumb a:hover {
+    color:#111;
+}
+
+.work-image {
+    width:100%;
+    height:auto;
+    margin-bottom:60px;
+}
+
+.work-image img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.work-meta {
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #eee;
+}
+
+.work-title {
+    font-size:32px;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.work-info {
+    font-size:14px;
+    color:#666;
+    line-height:2;
+}
+
+.work-info dt {
+    display:inline-block;
+    width:100px;
+    font-weight:400;
+}
+
+.work-info dd {
+    display:inline;
+}
+
+.work-info dd::after {
+    content:'';
+    display:block;
+    margin-bottom:8px;
+}
+
+.work-content {
+    margin-bottom:60px;
+}
+
+.work-content h2 {
+    font-size:20px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.work-content p {
+    margin-bottom:20px;
+    line-height:2;
+}
+
+.image-note {
+    background:#f9f9f9;
+    padding:30px;
+    margin:40px 0;
+    font-size:14px;
+    color:#666;
+    line-height:2;
+}
+
+.image-note h3 {
+    font-size:16px;
+    color:#111;
+    margin-bottom:15px;
+    font-weight:400;
+}
+
+.back-link {
+    text-align:center;
+    margin-top:60px;
+}
+
+.back-link a {
+    display:inline-block;
+    padding:12px 30px;
+    border:1px solid #111;
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.back-link a:hover {
+    background:#111;
+    color:white;
+}
+
+/* ========================================
+   Media Queries (Mobile)
+   ======================================== */
+@media(max-width:768px){
+    header { padding:15px 20px; }
+    .container { padding:100px 20px 60px; }
+    .page-title { font-size:24px; margin-bottom:40px; }
+    .works-grid { gap:40px; }
+    .work-title { font-size:24px; }
+    .work-info dt { width:80px; }
+    .hero h1 { font-size:24px; }
+
+    /* Landing page */
+    body.landing h1 { font-size:32px; }
+    .language-links { flex-direction:column; gap:20px; }
+    .language-links a { min-width:200px; }
+}

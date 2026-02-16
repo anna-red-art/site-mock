@@ -1,199 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANNA RED</title>
+<title>ANNA RED | Official Site</title>
+<meta name="description" content="ANNA RED Official Website. Artist exploring animals, fantasy, and everyday life. Choose your language.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="/jp/index.html">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-<style>
-
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-    font-family: 'Inter', sans-serif;
-    color:#111;
-    background:#fff;
-    line-height:1.8;
-}
-
-h1,h2,h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight:400;
-}
-
-header {
-    position:fixed;
-    top:0;
-    width:100%;
-    background:#fff;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:100;
-}
-
-nav a {
-    margin-left:30px;
-    text-decoration:none;
-    color:#111;
-    font-size:14px;
-    letter-spacing:1px;
-}
-
-.hero {
-    height:100vh;
-    background:url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=2000') center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-}
-
-.hero h1 {
-    font-size:36px;
-    letter-spacing:2px;
-}
-
-.section {
-    padding:120px 10%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.works-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:40px;
-    margin-top:60px;
-}
-
-.works-grid img {
-    width:100%;
-    height:400px;
-    object-fit:cover;
-    filter:brightness(95%);
-    transition:0.3s;
-}
-
-.works-grid img:hover {
-    filter:brightness(80%);
-}
-
-.button {
-    display:inline-block;
-    margin-top:40px;
-    padding:12px 30px;
-    border:1px solid #111;
-    text-decoration:none;
-    color:#111;
-    font-size:14px;
-    letter-spacing:1px;
-    transition:0.3s;
-}
-
-.button:hover {
-    background:#111;
-    color:white;
-}
-
-footer {
-    padding:60px 10%;
-    text-align:center;
-    font-size:14px;
-    color:#777;
-}
-
-.social a {
-    margin:0 10px;
-    text-decoration:none;
-    color:#111;
-}
-
-@media(max-width:768px){
-    .hero h1 { font-size:24px; }
-    header { padding:15px 20px; }
-}
-
-</style>
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body>
+<body class="landing">
 
-<header>
-    <div><strong>ANNA RED</strong></div>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-        <a href="#exhibitions">Exhibitions</a>
-        <a href="#shop">Shop</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<div class="container">
+    <h1>ANNA RED</h1>
+    <p class="tagline">Happiness & Freedom</p>
 
-<section class="hero">
-    <div>
-        <h1>日常は、結局すばらしい。<br>
-        Everyday life is, after all, wonderful.</h1>
+    <div class="language-links">
+        <a href="/jp/index.html">日本語 (JP)</a>
+        <a href="/en/index.html">English (EN)</a>
     </div>
-</section>
-
-<section class="section" id="about">
-    <h2>About</h2>
-    <p style="margin-top:30px; max-width:600px;">
-    ANNA RED / Artist<br>
-    Since 2013<br>
-    動物 × ファンタジー × 日常<br>
-    世界絵画大賞展 ベステック賞 受賞<br>
-    海外ストリートパフォーマンス10年
-    </p>
-</section>
-
-<section class="section" id="works">
-    <h2>Works</h2>
-    <div class="works-grid">
-        <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?q=80&w=1200">
-        <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1200">
-        <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1200">
-        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200">
-        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200">
-    </div>
-    <a href="#shop" class="button">View Shop</a>
-</section>
-
-<section class="section" id="exhibitions">
-    <h2>Exhibitions</h2>
-    <p style="margin-top:30px; max-width:600px;">
-    2025 Solo Exhibition – Tokyo<br>
-    2024 Group Show – Paris<br>
-    2023 Art Fair – Berlin
-    </p>
-</section>
-
-<section class="section" id="shop">
-    <h2>Shop</h2>
-    <a href="https://thebase.in/" target="_blank" class="button">
-        BASE SHOP
-    </a>
-</section>
-
-<section class="section" id="contact">
-    <h2>Contact</h2>
-    <p style="margin-top:30px;">
-        info@annaredart.com<br><br>
-        Commission / Collaboration Welcome
-    </p>
-</section>
-
-<footer>
-    <div class="social">
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="#">X</a>
-    </div>
-    <div style="margin-top:20px;">© ANNA RED</div>
-</footer>
+</div>
 
 </body>
 </html>
