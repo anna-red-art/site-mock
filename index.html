@@ -1,27 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANNA RED | Official Site</title>
-<meta name="description" content="ANNA RED Official Website. Artist exploring animals, fantasy, and everyday life. Choose your language.">
-<meta name="robots" content="noindex,follow">
-<link rel="canonical" href="jp/index.html">
+<title>ANNA RED | 公式サイト</title>
+<meta name="description" content="ANNA RED（アンナレッド）公式サイト。Happiness & Freedom — 色と物語で描く日常のファンタジー。">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="landing">
+<body>
 
-<div class="container">
-    <h1>ANNA RED</h1>
-    <p class="tagline">Happiness & Freedom</p>
+<header>
+    <a href="index.html" class="site-logo">ANNA RED</a>
+    <button class="nav-toggle" aria-label="メニュー" onclick="this.closest('header').nextElementSibling.classList.toggle('open') || document.querySelector('nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="global-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="docs/news/index.html">News</a>
+        <a href="works/index.html">Works</a>
+        <a href="about.html">About</a>
+        <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <div class="language-links">
-        <a href="jp/index.html">日本語 (JP)</a>
-        <a href="en/index.html">English (EN)</a>
+<!-- Hero -->
+<section class="hero">
+    <img class="hero-image"
+         src="assets/images/cover/landing.jpg"
+         alt="ANNA RED — Happiness & Freedom">
+    <div class="hero-content">
+        <p class="tagline">Happiness &amp; Freedom</p>
+        <h1>日常は、結局すばらしい。</h1>
+        <a href="works/index.html" class="btn">View more works</a>
     </div>
-</div>
+</section>
+
+<!-- Works Preview -->
+<section class="home-works">
+    <div class="section-header">
+        <h2>Works</h2>
+        <a href="works/index.html">View all Works →</a>
+    </div>
+
+    <div class="works-preview-grid">
+        <a href="works/balloon-cat.html" class="preview-item">
+            <img src="assets/images/works/balloon-cat-fantasy-painting.jpg"
+                 alt="風船猫の夢 — ANNA RED">
+            <div class="caption">
+                <h3>風船猫の夢</h3>
+                <span class="year">2024</span>
+            </div>
+        </a>
+        <a href="works/fantasy-dog.html" class="preview-item">
+            <img src="assets/images/works/fantasy-dog-watercolor.jpg"
+                 alt="森の番人 — ANNA RED">
+            <div class="caption">
+                <h3>森の番人</h3>
+                <span class="year">2023</span>
+            </div>
+        </a>
+        <a href="works/rainbow-bird.html" class="preview-item">
+            <img src="assets/images/works/rainbow-bird-acrylic.jpg"
+                 alt="虹の使者 — ANNA RED">
+            <div class="caption">
+                <h3>虹の使者</h3>
+                <span class="year">2023</span>
+            </div>
+        </a>
+        <a href="works/balloon-cat.html" class="preview-item">
+            <img src="assets/images/works/balloon-cat-fantasy-painting.jpg"
+                 alt="風船猫の夢（詳細） — ANNA RED">
+            <div class="caption">
+                <h3>風船猫の夢（詳細）</h3>
+                <span class="year">2024</span>
+            </div>
+        </a>
+        <a href="works/fantasy-dog.html" class="preview-item">
+            <img src="assets/images/works/fantasy-dog-watercolor.jpg"
+                 alt="森の番人（習作） — ANNA RED">
+            <div class="caption">
+                <h3>森の番人（習作）</h3>
+                <span class="year">2023</span>
+            </div>
+        </a>
+        <a href="works/rainbow-bird.html" class="preview-item">
+            <img src="assets/images/works/rainbow-bird-acrylic.jpg"
+                 alt="虹の使者（習作） — ANNA RED">
+            <div class="caption">
+                <h3>虹の使者（習作）</h3>
+                <span class="year">2022</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="home-works-footer">
+        <a href="works/index.html" class="btn">View all Works</a>
+    </div>
+</section>
+
+<!-- News Preview -->
+<section class="home-news">
+    <div class="section-header">
+        <h2>News</h2>
+        <a href="docs/news/index.html">View all News →</a>
+    </div>
+
+    <ul class="news-preview-list">
+        <li>
+            <a href="docs/news/2026-independent-tokyo.html">
+                <span class="date">2026.02.10</span>
+                <span class="label">New</span>
+                <span class="news-title">Independent Tokyo 2026 出展のお知らせ</span>
+            </a>
+        </li>
+        <li>
+            <a href="docs/news/2025-exhibition-report.html">
+                <span class="date">2025.12.05</span>
+                <span class="label report">Report</span>
+                <span class="news-title">世界絵画大賞展 ベステック賞受賞のご報告</span>
+            </a>
+        </li>
+        <li>
+            <a href="docs/news/2025-solo-exhibition.html">
+                <span class="date">2025.09.01</span>
+                <span class="label">New</span>
+                <span class="news-title">秋のグループ展 参加のお知らせ</span>
+            </a>
+        </li>
+        <li>
+            <a href="docs/news/2025-base-open.html">
+                <span class="date">2025.07.15</span>
+                <span class="label">New</span>
+                <span class="news-title">BASEにてオンラインショップをオープンしました</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="home-news-footer">
+        <a href="docs/news/index.html" class="btn">View all News</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-sns">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© ANNA RED</p>
+</footer>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('global-nav').classList.toggle('open');
+});
+</script>
 
 </body>
 </html>
