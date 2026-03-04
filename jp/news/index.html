@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News — ANNA RED</title>
+<meta name="description" content="ANNA RED（アンナレッド）のNews。展示・イベントの告知とレポートを掲載しています。">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="../index.html" class="site-logo">ANNA RED</a>
+    <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="global-nav">
+        <a href="../index.html">Home</a>
+        <a href="index.html" class="active">News</a>
+        <a href="../works/index.html">Works</a>
+        <a href="../about.html">About</a>
+        <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../../en/news/index.html" class="lang-switch">EN</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1 class="page-title">News</h1>
+
+    <ul class="news-list">
+
+        <li>
+            <a href="2026-independent-tokyo.html">
+                <span class="date">2026.03.04</span>
+                <span class="label">New</span>
+                <span class="news-list-title">Independent Tokyo 2026 出展のお知らせ</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="2026-scrap-and-build.html">
+                <span class="date">2026.02.15</span>
+                <span class="label report">Report</span>
+                <span class="news-list-title">グループ展「SCRAP &amp; BUILD」ご来場ありがとうございました</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="2025-bokura-no-ikitsuke.html">
+                <span class="date">2025.06.24</span>
+                <span class="label report">Report</span>
+                <span class="news-list-title">個展「僕らの行きつけ」ご来場ありがとうございました</span>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+<footer>
+    <div class="footer-sns">
+        <a href="https://www.instagram.com/annared_art/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© ANNA RED</p>
+</footer>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('global-nav').classList.toggle('open');
+});
+</script>
+
+</body>
+</html>

@@ -13,13 +13,18 @@
 <body>
 
 <header>
-    <div><strong>ANNA RED</strong></div>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./works/index.html">Works</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="../jp/about.html">JP</a>
+    <a href="index.html" class="site-logo">ANNA RED</a>
+    <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="global-nav">
+        <a href="index.html">Home</a>
+        <a href="news/index.html">News</a>
+        <a href="works/index.html">Works</a>
+        <a href="about.html" class="active">About</a>
+        <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="../jp/about.html" class="lang-switch">JP</a>
     </nav>
 </header>
 
@@ -54,8 +59,19 @@
 </div>
 
 <footer>
-    <div>© ANNA RED</div>
+    <div class="footer-sns">
+        <a href="https://www.instagram.com/annared_art/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© ANNA RED</p>
 </footer>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('global-nav').classList.toggle('open');
+});
+</script>
 
 </body>
 </html>

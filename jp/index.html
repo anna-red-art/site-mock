@@ -3,39 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANNA RED - 色と物語で描く日常のファンタジー</title>
-<meta name="description" content="ANNA RED公式サイト。動物×ファンタジー×日常をテーマにした絵画作品。世界絵画大賞展ベステック賞受賞。Happiness & Freedom">
+<title>ANNA RED | 公式サイト</title>
+<meta name="description" content="ANNA RED（アンナレッド）公式サイト。Happiness & Freedom — 日常から生まれる、色と物語のファンタジー。東京を拠点に活動する現代アーティスト。">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
-
 </head>
 
 <body>
 
 <header>
-    <div><strong>ANNA RED</strong></div>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./works/index.html">Works</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="../en/index.html">EN</a>
+    <a href="index.html" class="site-logo">ANNA RED</a>
+    <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="global-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="news/index.html">News</a>
+        <a href="works/index.html">Works</a>
+        <a href="about.html">About</a>
+        <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
+<!-- Hero -->
 <section class="hero">
-    <div>
-        <p class="tagline">Happiness & Freedom</p>
-        <h1>日常は、結局すばらしい。<br>
-        Everyday life is, after all, wonderful.</h1>
-        <p style="color:#666; margin-top:20px;">色と物語で描く日常のファンタジー</p>
-        <a href="./works/index.html" class="button">View Works</a>
+    <img class="hero-image"
+         src="../assets/images/cover/landing.jpg"
+         alt="ANNA RED — Happiness & Freedom">
+    <div class="hero-content">
+        <p class="tagline">Happiness &amp; Freedom</p>
+        <h1>日常から生まれる、<br>色と物語のファンタジー</h1>
+        <a href="works/index.html" class="btn">View more works</a>
+    </div>
+</section>
+
+<!-- Works Preview -->
+<section class="home-works">
+    <div class="section-header">
+        <h2>Works</h2>
+        <a href="works/index.html">View all Works →</a>
+    </div>
+
+    <div class="works-preview-grid">
+        <a href="works/ohanami-bar.html" class="preview-item">
+            <div class="protected">
+                <img src="../assets/images/works/ohanami-bar.jpg"
+                     alt="Ohanami Bar — ANNA RED" class="protected">
+            </div>
+            <div class="caption">
+                <h3>Ohanami Bar</h3>
+                <span class="year">2025</span>
+            </div>
+        </a>
+        <a href="works/notre-qg.html" class="preview-item">
+            <div class="protected">
+                <img src="../assets/images/works/notre-qg.jpg"
+                     alt="Notre QG — ANNA RED" class="protected">
+            </div>
+            <div class="caption">
+                <h3>Notre QG</h3>
+                <span class="year">2025</span>
+            </div>
+        </a>
+        <a href="works/pugs-bakery.html" class="preview-item">
+            <div class="protected">
+                <img src="../assets/images/works/pugs-bakery.jpg"
+                     alt="Pug's Bakery — ANNA RED" class="protected">
+            </div>
+            <div class="caption">
+                <h3>Pug's Bakery</h3>
+                <span class="year">2025</span>
+            </div>
+        </a>
+        <a href="works/toki-ga-kuru-made.html" class="preview-item">
+            <div class="protected">
+                <img src="../assets/images/works/toki-ga-kuru-made.jpg"
+                     alt="時が来るまで — ANNA RED" class="protected">
+            </div>
+            <div class="caption">
+                <h3>時が来るまで</h3>
+                <span class="year">2024</span>
+            </div>
+        </a>
+        <a href="works/dj-b.html" class="preview-item">
+            <div class="protected">
+                <img src="../assets/images/works/dj-b.jpg"
+                     alt="DJ B — ANNA RED" class="protected">
+            </div>
+            <div class="caption">
+                <h3>DJ B</h3>
+                <span class="year">2024</span>
+            </div>
+        </a>
+        <a href="works/flower-unicorn.html" class="preview-item">
+            <div class="protected">
+                <img src="../assets/images/works/flower-unicorn.jpg"
+                     alt="花屋のユニコーン — ANNA RED" class="protected">
+            </div>
+            <div class="caption">
+                <h3>花屋のユニコーン</h3>
+                <span class="year">2021</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="home-works-footer">
+        <a href="works/index.html" class="btn">View all Works</a>
+    </div>
+</section>
+
+<!-- News Preview -->
+<section class="home-news">
+    <div class="section-header">
+        <h2>News</h2>
+        <a href="news/index.html">View all News →</a>
+    </div>
+
+    <ul class="news-preview-list">
+        <li>
+            <a href="news/2026-independent-tokyo.html">
+                <span class="date">2026.03.04</span>
+                <span class="label">New</span>
+                <span class="news-title">Independent Tokyo 2026 出展のお知らせ</span>
+            </a>
+        </li>
+        <li>
+            <a href="news/2026-scrap-and-build.html">
+                <span class="date">2026.02.15</span>
+                <span class="label report">Report</span>
+                <span class="news-title">グループ展「SCRAP &amp; BUILD」ご来場ありがとうございました</span>
+            </a>
+        </li>
+        <li>
+            <a href="news/2025-bokura-no-ikitsuke.html">
+                <span class="date">2025.06.24</span>
+                <span class="label report">Report</span>
+                <span class="news-title">個展「僕らの行きつけ」ご来場ありがとうございました</span>
+            </a>
+        </li>
+        <li>
+            <a href="news/index.html">
+                <span class="date">&nbsp;</span>
+                <span class="label" style="border-color:transparent;color:transparent">New</span>
+                <span class="news-title" style="color:var(--muted)">View all News →</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="home-news-footer">
+        <a href="news/index.html" class="btn">View all News</a>
     </div>
 </section>
 
 <footer>
-    <div>© ANNA RED</div>
+    <div class="footer-sns">
+        <a href="https://www.instagram.com/annared_art/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© ANNA RED</p>
 </footer>
+
+<script src="../assets/js/protect-images.js"></script>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('global-nav').classList.toggle('open');
+});
+</script>
 
 </body>
 </html>

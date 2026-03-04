@@ -3,59 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - ANNA RED</title>
-<meta name="description" content="ANNA RED（アンナレッド）プロフィール。Artist、Since 2013。世界絵画大賞展ベステック賞受賞。海外ストリートパフォーマンス10年。">
+<title>About — ANNA RED</title>
+<meta name="description" content="ANNA RED（アンナレッド）プロフィール・略歴。Contemporary Artist。色と物語で描く日常のファンタジー。東京を拠点に活動。世界絵画大賞展ベステック賞受賞。">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
-
 </head>
 
 <body>
 
 <header>
-    <div><strong>ANNA RED</strong></div>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./works/index.html">Works</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="../en/about.html">EN</a>
+    <a href="index.html" class="site-logo">ANNA RED</a>
+    <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="global-nav">
+        <a href="index.html">Home</a>
+        <a href="news/index.html">News</a>
+        <a href="works/index.html">Works</a>
+        <a href="about.html" class="active">About</a>
+        <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <div class="container">
     <h1 class="page-title">About</h1>
 
-    <p class="tagline">Happiness & Freedom</p>
+    <div class="about-layout">
+        <div class="about-text">
+            <h2>Artist</h2>
+            <p class="name">ANNA RED</p>
+            <p class="sub">Contemporary Artist</p>
 
-    <div class="profile">
-        <p><strong>ANNA RED</strong></p>
-        <p>Artist</p>
-        <p>Since 2013</p>
+            <p>色と物語で描く日常のファンタジー</p>
+
+            <p>東京を拠点に活動。</p>
+            <p>
+                10年を超えて通い続けたオーストラリアでの暮らしや、
+                旅先でのストリートパフォーマンス、様々な経験を
+                通して出会った、心の動く瞬間を大切に描いてきました。
+            </p>
+            <p>
+                暮らしの中で生まれる、楽しさや美しさを、
+                物語としてキャンバスへ。
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="../assets/images/artist-photo.jpg"
+                 alt="ANNA RED アーティスト写真">
+        </div>
     </div>
 
-    <div class="section">
-        <h2>世界観</h2>
-        <p>動物 × ファンタジー × 日常</p>
-        <p style="margin-top:20px;">色と物語で描く日常のファンタジー。<br>
-        日常の中に潜む小さな魔法を、動物たちの姿を通して表現しています。</p>
+    <div class="history">
+        <h2>略歴</h2>
+        <ul class="history-list">
+            <li><span class="year">2013</span><span>個展「Party」</span></li>
+            <li>
+                <span class="year">2014</span>
+                <span>
+                    個展「ANNA REDはBARにいる」<br>
+                    西武渋谷店グループ展「シブヤスタイル vol.8」<br>
+                    個展「ANNA RED展」
+                </span>
+            </li>
+            <li>
+                <span class="year">2017</span>
+                <span>
+                    個展「ANNA RED in STEAM JUNKIES」（メルボルン）<br>
+                    個展「COLORS」
+                </span>
+            </li>
+            <li><span class="year">2018</span><span>個展「木陰のノスタルジア」</span></li>
+            <li><span class="year">2019</span><span>個展「Art Break」（メルボルン）</span></li>
+            <li><span class="year">2023</span><span>個展「Fantasy10」</span></li>
+            <li>
+                <span class="year">2024</span>
+                <span>
+                    個展「Fantasy10」（メルボルン）<br>
+                    個展「小さな世界」<br>
+                    個展「Wan Wan Carnival」<br>
+                    デザインフェスタ vol.60
+                </span>
+            </li>
+            <li>
+                <span class="year">2025</span>
+                <span>
+                    個展「僕らの行きつけ」<br>
+                    デザインフェスタ vol.61 vol.62
+                </span>
+            </li>
+            <li><span class="year">2026.2</span><span>グループ展「SCRAP &amp; BUILD」</span></li>
+            <li><span class="year">他</span><span>グループ展・アートイベント等に参加</span></li>
+        </ul>
     </div>
 
-    <div class="section">
+    <div class="history">
         <h2>受賞歴</h2>
-        <p>世界絵画大賞展 ベステック賞 受賞</p>
+        <ul class="history-list">
+            <li><span class="year">2024</span><span>第20回 世界絵画大賞展 ベステック賞</span></li>
+        </ul>
     </div>
 
-    <div class="section">
-        <h2>活動歴</h2>
-        <p>海外ストリートパフォーマンス10年<br>
-        国内外でのグループ展・個展多数</p>
-    </div>
 </div>
 
 <footer>
-    <div>© ANNA RED</div>
+    <div class="footer-sns">
+        <a href="https://www.instagram.com/annared_art/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© ANNA RED</p>
 </footer>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('global-nav').classList.toggle('open');
+});
+</script>
 
 </body>
 </html>

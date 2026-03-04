@@ -3,58 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Works - ANNA RED</title>
-<meta name="description" content="ANNA RED（アンナレッド）の作品一覧。動物×ファンタジー×日常をテーマにした絵画・原画作品。">
+<title>Works — ANNA RED</title>
+<meta name="description" content="ANNA RED（アンナレッド）の作品一覧。色と物語で描く日常のファンタジー。">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/css/style.css">
-
 </head>
 
 <body>
 
 <header>
-    <div><strong>ANNA RED</strong></div>
-    <nav>
+    <a href="../index.html" class="site-logo">ANNA RED</a>
+    <button class="nav-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+    </button>
+    <nav id="global-nav">
         <a href="../index.html">Home</a>
-        <a href="../works/index.html">Works</a>
+        <a href="../news/index.html">News</a>
+        <a href="index.html" class="active">Works</a>
         <a href="../about.html">About</a>
+        <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
         <a href="../contact.html">Contact</a>
-        <a href="../../en/works/index.html">EN</a>
     </nav>
 </header>
 
 <div class="container">
     <h1 class="page-title">Works</h1>
 
-    <div class="works-grid">
+    <div class="filter-tabs" role="group" aria-label="カテゴリフィルター">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="artworks">Artworks</button>
+        <button class="filter-tab" data-filter="mural">Mural</button>
+        <button class="filter-tab" data-filter="sculpture">Sculpture</button>
+    </div>
 
-        <a href="../works/balloon-cat.html" class="work-item">
-            <img src="../../assets/images/works/balloon-cat-fantasy-painting.jpg"
-                 alt="風船を持つ猫のファンタジー絵画 - ANNA RED作品">
-            <h2>風船猫の夢</h2>
-            <p class="year">2024</p>
+    <div class="works-grid" id="works-grid">
+
+        <a href="ohanami-bar.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/ohanami-bar.jpg"
+                     alt="Ohanami Bar — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Ohanami Bar</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
         </a>
 
-        <a href="../works/fantasy-dog.html" class="work-item">
-            <img src="../../assets/images/works/fantasy-dog-watercolor.jpg"
-                 alt="ファンタジー世界の犬を描いた水彩画 - ANNA RED作品">
-            <h2>森の番人</h2>
-            <p class="year">2023</p>
+        <a href="notre-qg.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/notre-qg.jpg"
+                     alt="Notre QG — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Notre QG</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
         </a>
 
-        <a href="../works/rainbow-bird.html" class="work-item">
-            <img src="../../assets/images/works/rainbow-bird-acrylic.jpg"
-                 alt="虹色の鳥を描いたアクリル画 - ANNA RED作品">
-            <h2>虹の使者</h2>
-            <p class="year">2023</p>
+        <a href="pugs-bakery.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/pugs-bakery.jpg"
+                     alt="Pug's Bakery — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Pug's Bakery</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="toki-ga-kuru-made.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/toki-ga-kuru-made.jpg"
+                     alt="時が来るまで — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>時が来るまで</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="the-shop-window.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/the-shop-window.jpg"
+                     alt="The shop window — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>The shop window</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="dj-b.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/dj-b.jpg"
+                     alt="DJ B — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>DJ B</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="inu-house.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/inu-house.jpg"
+                     alt="Inu House — ANNA RED 2022" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Inu House</h2>
+                <span class="meta">2022 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="sakura-park.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/sakura-park.jpg"
+                     alt="Sakura Park — ANNA RED 2022" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Sakura Park</h2>
+                <span class="meta">2022 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="flower-unicorn.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/flower-unicorn.jpg"
+                     alt="花屋のユニコーン — ANNA RED 2021" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>花屋のユニコーン</h2>
+                <span class="meta">2021 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="shall-we-dance.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/shall-we-dance.jpg"
+                     alt="Shall we dance? — ANNA RED 2020" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Shall we dance?</h2>
+                <span class="meta">2020 &nbsp;/&nbsp; Artworks</span>
+            </div>
         </a>
 
     </div>
 </div>
 
 <footer>
-    <div>© ANNA RED</div>
+    <div class="footer-sns">
+        <a href="https://www.instagram.com/annared_art/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© ANNA RED</p>
 </footer>
+
+<script src="../../assets/js/protect-images.js"></script>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.getElementById('global-nav').classList.toggle('open');
+});
+document.querySelectorAll('.filter-tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-tab').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.dataset.filter;
+        document.querySelectorAll('.work-card').forEach(function(card) {
+            card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+        });
+    });
+});
+</script>
 
 </body>
 </html>
