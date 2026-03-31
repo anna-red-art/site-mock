@@ -1,2 +1,0 @@
-# site-mock
-site-mock
