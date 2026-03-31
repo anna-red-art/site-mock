@@ -3,126 +3,293 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANNA RED | Official Site</title>
-<meta name="description" content="ANNA RED Official Site. Happiness & Freedom — Fantasy in everyday life through color and story. Contemporary Artist based in Tokyo.">
+<title>Works — ANNA RED</title>
+<meta name="description" content="Browse ANNA RED's artworks — paintings, murals, and sculptures featuring animals, fantasy, and everyday life.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
 
 <header>
-    <a href="index.html" class="site-logo">ANNA RED</a>
+    <a href="../index.html" class="site-logo">ANNA RED</a>
     <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
     </button>
     <nav id="global-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="news/index.html">News</a>
-        <a href="works/index.html">Works</a>
-        <a href="about.html">About</a>
+        <a href="../index.html">Home</a>
+        <a href="../news/index.html">News</a>
+        <a href="index.html" class="active">Works</a>
+        <a href="../about.html">About</a>
         <a href="https://anna-red.base.shop/" target="_blank" rel="noopener">Shop</a>
-        <a href="contact.html">Contact</a>
-        <a href="../jp/index.html" class="lang-switch">JP</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../../jp/works/index.html" class="lang-switch">JP</a>
     </nav>
 </header>
 
-<section class="hero">
-    <img class="hero-image"
-         src="../assets/images/cover/landing.jpg"
-         alt="ANNA RED — Happiness & Freedom">
-    <div class="hero-content">
-        <p class="tagline">Happiness &amp; Freedom</p>
-        <h1>Fantasy in everyday life<br>through color and story</h1>
-        <a href="works/index.html" class="btn">View more works</a>
-    </div>
-</section>
+<div class="container">
+    <h1 class="page-title">Works</h1>
 
-<section class="home-works">
-    <div class="section-header">
-        <h2>Works</h2>
-        <a href="works/index.html">View all Works →</a>
+    <div class="filter-tabs" role="group" aria-label="Category filter">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="artworks">Artworks</button>
+        <button class="filter-tab" data-filter="mural">Mural</button>
     </div>
 
-    <div class="works-preview-grid">
-        <a href="works/balloon-cat.html" class="preview-item">
+    <div class="works-grid" id="works-grid">
+
+        <!-- 2026 -->
+        <a href="cycle.html" class="work-card" data-category="artworks">
             <div class="protected">
-                <img src="../assets/images/works/balloon-cat-fantasy-painting.jpg"
-                     alt="Balloon Cat Dream — ANNA RED" class="protected">
+                <img src="../../assets/images/works/cycle.jpg"
+                     alt="Cycle — ANNA RED 2026" class="protected">
             </div>
-            <div class="caption">
-                <h3>Balloon Cat Dream</h3>
-                <span class="year">2024</span>
+            <div class="work-card-caption">
+                <h2>Cycle</h2>
+                <span class="meta">2026 &nbsp;/&nbsp; Artworks</span>
             </div>
         </a>
-        <a href="works/fantasy-dog.html" class="preview-item">
+
+        <a href="still-developing.html" class="work-card" data-category="artworks">
             <div class="protected">
-                <img src="../assets/images/works/fantasy-dog-watercolor.jpg"
-                     alt="Guardian of the Forest — ANNA RED" class="protected">
+                <img src="../../assets/images/works/still-developing.jpg"
+                     alt="Still Developing — ANNA RED 2026" class="protected">
             </div>
-            <div class="caption">
-                <h3>Guardian of the Forest</h3>
-                <span class="year">2023</span>
+            <div class="work-card-caption">
+                <h2>Still Developing</h2>
+                <span class="meta">2026 &nbsp;/&nbsp; Artworks</span>
             </div>
         </a>
-        <a href="works/rainbow-bird.html" class="preview-item">
+
+        <a href="ayumi-wo-tomenu-mono.html" class="work-card" data-category="artworks">
             <div class="protected">
-                <img src="../assets/images/works/rainbow-bird-acrylic.jpg"
-                     alt="Rainbow Messenger — ANNA RED" class="protected">
+                <img src="../../assets/images/works/ayumi-wo-tomenu-mono.jpg"
+                     alt="The Ones Who Never Stop Walking — ANNA RED 2026" class="protected">
             </div>
-            <div class="caption">
-                <h3>Rainbow Messenger</h3>
-                <span class="year">2023</span>
+            <div class="work-card-caption">
+                <h2>The Ones Who Never Stop Walking</h2>
+                <span class="meta">2026 &nbsp;/&nbsp; Artworks</span>
             </div>
         </a>
-    </div>
 
-    <div class="home-works-footer">
-        <a href="works/index.html" class="btn">View all Works</a>
-    </div>
-</section>
+        <!-- 2025 -->
+        <a href="dalmatian-cafe-101.html" class="work-card" data-category="mural">
+            <div class="protected">
+                <img src="../../assets/images/works/dalmatian-cafe-101-1.jpg"
+                     alt="DALMATIAN CAFE 101 — ANNA RED Mural 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>DALMATIAN CAFE 101</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Mural</span>
+            </div>
+        </a>
 
-<section class="home-news">
-    <div class="section-header">
-        <h2>News</h2>
-        <a href="news/index.html">View all News →</a>
-    </div>
+        <a href="husky-cafe-tokyo.html" class="work-card" data-category="mural">
+            <div class="protected">
+                <img src="../../assets/images/works/husky-cafe-tokyo-1.jpg"
+                     alt="HUSKY CAFE TOKYO — ANNA RED Mural 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>HUSKY CAFE TOKYO</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Mural</span>
+            </div>
+        </a>
 
-    <ul class="news-preview-list">
-        <li>
-            <a href="news/2026-independent-tokyo.html">
-                <span class="date">2026.03.04</span>
-                <span class="label">New</span>
-                <span class="news-title">Independent Tokyo 2026 — Exhibition announcement</span>
-            </a>
-        </li>
-        <li>
-            <a href="news/2026-scrap-and-build.html">
-                <span class="date">2026.02.15</span>
-                <span class="label report">Report</span>
-                <span class="news-title">Group Exhibition "SCRAP &amp; BUILD" — Thank you for visiting</span>
-            </a>
-        </li>
-        <li>
-            <a href="news/2025-bokura-no-ikitsuke.html">
-                <span class="date">2025.06.24</span>
-                <span class="label report">Report</span>
-                <span class="news-title">Solo Exhibition "Bokura no Ikitsuke" — Thank you for visiting</span>
-            </a>
-        </li>
-        <li>
-            <a href="news/index.html">
-                <span class="date">&nbsp;</span>
-                <span class="label" style="border-color:transparent;color:transparent">New</span>
-                <span class="news-title" style="color:var(--muted)">View all News →</span>
-            </a>
-        </li>
-    </ul>
+        <a href="im-ready.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/im-ready.jpg"
+                     alt="I'm Ready — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>I'm Ready</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
 
-    <div class="home-news-footer">
-        <a href="news/index.html" class="btn">View all News</a>
+        <a href="ohanami-bar.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/ohanami-bar.jpg"
+                     alt="Ohanami Bar — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Ohanami Bar</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="notre-qg.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/notre-qg.jpg"
+                     alt="Notre QG — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Notre QG</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="pugs-bakery.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/pugs-bakery.jpg"
+                     alt="Pug's Bakery — ANNA RED 2025" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Pug's Bakery</h2>
+                <span class="meta">2025 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <!-- 2024 -->
+        <a href="tourist.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/tourist.jpg"
+                     alt="Tourist — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Tourist</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="the-bar.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/the-bar.jpg"
+                     alt="The bar — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>The bar</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="toki-ga-kuru-made.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/toki-ga-kuru-made.jpg"
+                     alt="Until That Time Comes — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Until That Time Comes</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="the-shop-window.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/the-shop-window.jpg"
+                     alt="The shop window — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>The shop window</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="dj-b.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/dj-b.jpg"
+                     alt="DJ B — ANNA RED 2024" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>DJ B</h2>
+                <span class="meta">2024 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <!-- 2023 -->
+        <a href="fighters.html" class="work-card" data-category="mural">
+            <div class="protected">
+                <img src="../../assets/images/works/fighters-1.jpg"
+                     alt="Fighters — ANNA RED Mural 2023" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Fighters</h2>
+                <span class="meta">2023 &nbsp;/&nbsp; Mural</span>
+            </div>
+        </a>
+
+        <a href="jewelers-workbench.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/jewelers-workbench.jpg"
+                     alt="Jeweler's workbench — ANNA RED 2023" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Jeweler's workbench</h2>
+                <span class="meta">2023 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <!-- 2022 -->
+        <a href="tokyo-mushrooms.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/tokyo-mushrooms.jpg"
+                     alt="TOKYO mushrooms — ANNA RED 2022" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>TOKYO mushrooms</h2>
+                <span class="meta">2022 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="inu-house.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/inu-house.jpg"
+                     alt="Inu House — ANNA RED 2022" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Inu House</h2>
+                <span class="meta">2022 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <a href="sakura-park.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/sakura-park.jpg"
+                     alt="Sakura Park — ANNA RED 2022" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Sakura Park</h2>
+                <span class="meta">2022 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <!-- 2021 -->
+        <a href="flower-unicorn.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/flower-unicorn.jpg"
+                     alt="The Florist Unicorn — ANNA RED 2021" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>The Florist Unicorn</h2>
+                <span class="meta">2021 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <!-- 2020 -->
+        <a href="shall-we-dance.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/shall-we-dance.jpg"
+                     alt="Shall we dance? — ANNA RED 2020" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>Shall we dance?</h2>
+                <span class="meta">2020 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
+        <!-- 2018 -->
+        <a href="city-of-melbourne.html" class="work-card" data-category="artworks">
+            <div class="protected">
+                <img src="../../assets/images/works/city-of-melbourne.jpg"
+                     alt="City of Melbourne — ANNA RED 2018" class="protected">
+            </div>
+            <div class="work-card-caption">
+                <h2>City of Melbourne</h2>
+                <span class="meta">2018 &nbsp;/&nbsp; Artworks</span>
+            </div>
+        </a>
+
     </div>
-</section>
+</div>
 
 <footer>
     <div class="footer-sns">
@@ -130,13 +297,23 @@
         <a href="https://x.com/" target="_blank" rel="noopener">X</a>
         <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
     </div>
-    <p>© ANNA RED</p>
+    <p>&copy; ANNA RED</p>
 </footer>
 
-<script src="../assets/js/protect-images.js"></script>
+<script src="../../assets/js/protect-images.js"></script>
 <script>
 document.querySelector('.nav-toggle').addEventListener('click', function() {
     document.getElementById('global-nav').classList.toggle('open');
+});
+document.querySelectorAll('.filter-tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-tab').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.dataset.filter;
+        document.querySelectorAll('.work-card').forEach(function(card) {
+            card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+        });
+    });
 });
 </script>
 
