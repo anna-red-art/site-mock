@@ -800,6 +800,42 @@ footer {
     display: block;
 }
 
+.about-statement {
+    margin-bottom: 60px;
+}
+
+.about-statement h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-statement .statement-lead {
+    font-size: 16px;
+    line-height: 2.1;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.about-statement h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.about-statement p {
+    font-size: 15px;
+    line-height: 2.1;
+    color: #333;
+    margin-bottom: 16px;
+}
+
 .history {
     margin-bottom: 60px;
 }
@@ -1156,7 +1192,6 @@ body.contact-page {
 /* Heading override: lowercase, centered */
 .contact-heading {
     text-align: center;
-    text-transform: lowercase;
     letter-spacing: 6px;
     margin-bottom: 24px;
 }
