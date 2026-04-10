@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - ANNA RED</title>
-<meta name="description" content="Contact ANNA RED. Commissions and collaborations welcome. info@annaredart.com">
+<title>Contact — ANNA RED</title>
+<meta name="description" content="Contact ANNA RED. Commissions and collaborations welcome. Please use the form below for inquiries.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
-
 </head>
 
-<body>
+<body class="contact-page">
 
 <header>
     <a href="index.html" class="site-logo">ANNA RED</a>
@@ -29,18 +28,88 @@
 </header>
 
 <div class="container">
-    <h1 class="page-title">CONTACT</h1>
 
-    <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p><a href="mailto:info@annaredart.com">info@annaredart.com</a></p>
+    <h1 class="page-title contact-heading">CONTACT</h1>
+
+    <p class="contact-lead">Please use the form below for commissions, collaborations, and general inquiries.</p>
+    <p class="contact-note">
+        We will reply within 3 business days upon reviewing your message.<br>
+        Please note that we may not respond to sales or solicitation inquiries.
+    </p>
+
+    <!--
+    ================================================================
+    When migrating to WordPress:
+    Remove the <form> block (contact-form-mock) below and replace it
+    with a Contact Form 7 shortcode:
+
+        [contact-form-7 id="YOUR_FORM_ID" title="Contact Form"]
+
+    ================================================================
+    -->
+    <div class="contact-form-card">
+        <p class="contact-required-note"><span class="required-mark">*</span> Required field</p>
+
+        <form class="contact-form-mock" action="#" method="post" novalidate>
+
+            <div class="contact-field">
+                <label for="your-name">Name <span class="required-mark">*</span></label>
+                <input type="text" id="your-name" name="your-name" class="contact-input" autocomplete="name">
+            </div>
+
+            <div class="contact-field">
+                <label for="your-company">Company / Organisation</label>
+                <input type="text" id="your-company" name="your-company" class="contact-input" autocomplete="organization">
+            </div>
+
+            <div class="contact-field">
+                <label for="your-email">Email Address <span class="required-mark">*</span></label>
+                <input type="email" id="your-email" name="your-email" class="contact-input" autocomplete="email">
+            </div>
+
+            <div class="contact-field">
+                <label for="your-tel">Phone Number</label>
+                <input type="tel" id="your-tel" name="your-tel" class="contact-input" autocomplete="tel">
+            </div>
+
+            <div class="contact-field contact-field--message">
+                <label for="your-message">Message <span class="required-mark">*</span></label>
+                <textarea id="your-message" name="your-message" class="contact-textarea" rows="8"></textarea>
+            </div>
+
+            <div class="contact-field contact-field--privacy">
+                <label class="contact-privacy-label">
+                    <input type="checkbox" name="your-acceptance">
+                    I agree to the <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+                </label>
+            </div>
+
+            <div class="contact-field contact-field--submit">
+                <button type="submit" class="contact-submit">Send</button>
+            </div>
+
+        </form>
+    </div><!-- /contact-form-card -->
+
+    <div class="contact-layout contact-info-blocks">
+        <div class="contact-block">
+            <h2>SNS</h2>
+            <div class="sns-links">
+                <a href="https://www.instagram.com/annaredart/" target="_blank" rel="noopener" class="sns-link">Instagram</a>
+                <a href="https://x.com/annaredart" target="_blank" rel="noopener" class="sns-link">X (Twitter)</a>
+                <a href="https://youtube.com/@annaredart" target="_blank" rel="noopener" class="sns-link">YouTube</a>
+            </div>
+        </div>
+
+        <div class="contact-block">
+            <h2>Shop</h2>
+            <p>
+                Art prints and merchandise are available in our online shop.<br>
+                <a href="https://annared.theshop.jp/" target="_blank" rel="noopener">ANNA RED SHOP (BASE) →</a>
+            </p>
+        </div>
     </div>
 
-    <div class="note">
-        <p>Please feel free to contact me about commissions, collaborations, or any inquiries about my work.</p>
-        <p style="margin-top:20px;">Commissions & Collaborations Welcome</p>
-        <p style="margin-top:20px;">Please review our <a href="privacy-policy.html">Privacy Policy</a> before submitting your inquiry.</p>
-    </div>
 </div>
 
 <footer>

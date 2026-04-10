@@ -777,7 +777,7 @@ footer {
 }
 
 .about-text p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 2.1;
     color: #333;
     margin-bottom: 16px;
@@ -814,9 +814,8 @@ footer {
 }
 
 .about-statement .statement-lead {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2.1;
-    font-style: italic;
     color: #333;
     margin-bottom: 32px;
 }
