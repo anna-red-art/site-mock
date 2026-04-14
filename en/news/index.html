@@ -52,7 +52,7 @@
             <a href="2025-bokura-no-ikitsuke.html">
                 <span class="date">2025.06.24</span>
                 <span class="label report">Report</span>
-                <span class="news-list-title">Solo Exhibition "Bokura no Ikitsuke" — Thank you for visiting</span>
+                <span class="news-list-title">Solo Exhibition "Our Regular Spot" — Thank you for visiting</span>
             </a>
         </li>
 
@@ -96,6 +96,20 @@
 document.querySelector('.nav-toggle').addEventListener('click', function() {
     document.getElementById('global-nav').classList.toggle('open');
 });
+// Scroll position restore
+(function() {
+    var key = 'scroll_news_en';
+    var saved = sessionStorage.getItem(key);
+    if (saved !== null) {
+        requestAnimationFrame(function() { window.scrollTo(0, parseInt(saved, 10)); });
+        sessionStorage.removeItem(key);
+    }
+    document.querySelectorAll('.news-list a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            sessionStorage.setItem(key, window.scrollY);
+        });
+    });
+})();
 </script>
 
 </body>

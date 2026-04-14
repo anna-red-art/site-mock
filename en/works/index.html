@@ -66,10 +66,10 @@
         <a href="ayumi-wo-tomenu-mono.html" class="work-card" data-category="artworks">
             <div class="protected">
                 <img src="../../assets/images/works/ayumi-wo-tomenu-mono.jpg"
-                     alt="The Ones Who Never Stop Walking — ANNA RED 2026" class="protected">
+                     alt="The Relentless Walker — ANNA RED 2026" class="protected">
             </div>
             <div class="work-card-caption">
-                <h2>The Ones Who Never Stop Walking</h2>
+                <h2>The Relentless Walker</h2>
                 <span class="meta">2026 &nbsp;/&nbsp; Artworks</span>
             </div>
         </a>
@@ -300,6 +300,18 @@
             </div>
         </a>
 
+        <!-- Nihonga (Coming Soon) -->
+        <div class="work-card work-card--wip" data-category="nihonga">
+            <div class="wip-placeholder">
+                <span class="wip-label">Nihonga</span>
+                <span style="font-size:13px; letter-spacing:1px;">Work in Progress</span>
+            </div>
+            <div class="work-card-caption">
+                <h2 style="color:var(--muted);">Work in Progress</h2>
+                <span class="meta">Nihonga</span>
+            </div>
+        </div>
+
         <!-- 2018 -->
         <a href="city-of-melbourne.html" class="work-card" data-category="artworks">
             <div class="protected">
@@ -339,6 +351,20 @@ document.querySelectorAll('.filter-tab').forEach(function(btn) {
         });
     });
 });
+// Scroll position restore
+(function() {
+    var key = 'scroll_works_en';
+    var saved = sessionStorage.getItem(key);
+    if (saved !== null) {
+        requestAnimationFrame(function() { window.scrollTo(0, parseInt(saved, 10)); });
+        sessionStorage.removeItem(key);
+    }
+    document.querySelectorAll('.work-card').forEach(function(link) {
+        link.addEventListener('click', function() {
+            sessionStorage.setItem(key, window.scrollY);
+        });
+    });
+})();
 </script>
 
 </body>

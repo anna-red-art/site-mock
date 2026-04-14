@@ -300,6 +300,18 @@
             </div>
         </a>
 
+        <!-- Nihonga (準備中) -->
+        <div class="work-card work-card--wip" data-category="nihonga">
+            <div class="wip-placeholder">
+                <span class="wip-label">Nihonga</span>
+                <span style="font-size:13px; letter-spacing:1px;">Work in Progress</span>
+            </div>
+            <div class="work-card-caption">
+                <h2 style="color:var(--muted);">Work in Progress</h2>
+                <span class="meta">Nihonga</span>
+            </div>
+        </div>
+
         <!-- 2018 -->
         <a href="city-of-melbourne.html" class="work-card" data-category="artworks">
             <div class="protected">
@@ -339,6 +351,20 @@ document.querySelectorAll('.filter-tab').forEach(function(btn) {
         });
     });
 });
+// スクロール位置保持
+(function() {
+    var key = 'scroll_works_jp';
+    var saved = sessionStorage.getItem(key);
+    if (saved !== null) {
+        requestAnimationFrame(function() { window.scrollTo(0, parseInt(saved, 10)); });
+        sessionStorage.removeItem(key);
+    }
+    document.querySelectorAll('.work-card').forEach(function(link) {
+        link.addEventListener('click', function() {
+            sessionStorage.setItem(key, window.scrollY);
+        });
+    });
+})();
 </script>
 
 </body>
